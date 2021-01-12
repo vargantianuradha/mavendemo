@@ -79,7 +79,8 @@
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.8.1</version>
-    <execution>
+      </plugin>
+   <execution>
     <id>default-prepare-agent</id>
     <goals>
         <goal>prepare-agent</goal>
@@ -88,7 +89,7 @@
         <destFile>${project.build.directory}/jacoco-ut.exec</destFile>
     </configuration>
 </execution>
-    <execution>
+   <execution>
     <id>default-report</id>
     <goals>
         <goal>report</goal>
@@ -120,11 +121,15 @@
         </rules>
     </configuration>
 </execution>
-        <properties>
-          </plugin>
-          </plugins>
+        <plugin>
+    <groupId>org.sonarsource.scanner.maven</groupId>
+    <artifactId>sonar-maven-plugin</artifactId>
+    <version>3.7.0.1746</version>
+</plugin>
+   </plugins>
   </pluginManagement>
 </build>
+  <properties>
     <java.version>1.8</java.version>
     <sonar.language>java</sonar.language>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
