@@ -63,7 +63,6 @@
       </plugins>
     </pluginManagement>
   </build>
-
 <build>
   <pluginManagement>
     <plugins>
