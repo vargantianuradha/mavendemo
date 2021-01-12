@@ -79,8 +79,7 @@
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.8.1</version>
-      </plugin>
-   <execution>
+    <execution>
     <id>default-prepare-agent</id>
     <goals>
         <goal>prepare-agent</goal>
@@ -121,15 +120,13 @@
         </rules>
     </configuration>
 </execution>
+      </plugin>
         <plugin>
     <groupId>org.sonarsource.scanner.maven</groupId>
     <artifactId>sonar-maven-plugin</artifactId>
     <version>3.7.0.1746</version>
 </plugin>
-   </plugins>
-  </pluginManagement>
-</build>
-  <properties>
+    <properties>
     <java.version>1.8</java.version>
     <sonar.language>java</sonar.language>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
@@ -140,4 +137,7 @@
     <sonar.projectKey>sonar-test</sonar.projectKey>
     <sonar.host.url>http://10.0.3.66:9000</sonar.host.url>
 </properties>
+         </plugins>
+  </pluginManagement>
+</build>
         </project>
