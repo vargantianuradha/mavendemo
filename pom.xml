@@ -26,8 +26,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-
-  <build>
+<build>
     <finalName>flyhighwebapp</finalName>
     <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
@@ -60,7 +59,7 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-           <plugin>
+        <plugin>
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <executions>
@@ -71,12 +70,12 @@
           </execution>
         </executions>
       </plugin>
-        <plugin>
+      <plugin>
     <groupId>org.sonarsource.scanner.maven</groupId>
     <artifactId>sonar-maven-plugin</artifactId>
     <version>3.7.0.1746</version>
-</plugin>
-      <plugin>
+    </plugin>
+    <plugin>
     <groupId>org.jacoco</groupId>
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.8.1</version>
@@ -99,7 +98,8 @@
         <outputEncoding>UTF-8</outputEncoding>
         <outputDirectory>${project.build.directory}</outputDirectory>
     </configuration>
-</execution><execution>
+</execution>
+      <execution>
     <id>default-check</id>
     <goals>
         <goal>check</goal>
@@ -121,6 +121,10 @@
     </configuration>
 </execution>
         <properties>
+          </plugin>
+          </plugins>
+  </pluginManagement>
+</build>
     <java.version>1.8</java.version>
     <sonar.language>java</sonar.language>
     <sonar.java.coveragePlugin>jacoco</sonar.java.coveragePlugin>
@@ -131,15 +135,4 @@
     <sonar.projectKey>sonar-test</sonar.projectKey>
     <sonar.host.url>http://10.0.3.66:9000</sonar.host.url>
 </properties>
-    
-</plugin>
-        <plugin>
-        <groupId>org.sonarsource.scanner.maven</groupId>
-        <artifactId>sonar-maven-plugin</artifactId>
-        <version>3.6.0.1398</version>
-      </plugin>
-     
-    </plugins>
-  </pluginManagement>
-</build>
-</project>
+        </project>
