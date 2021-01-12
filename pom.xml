@@ -150,11 +150,12 @@
                 <outputDirectory>${project.reporting.outputDirectory}/jacoco-it</outputDirectory>
             </configuration>
         </execution>
+      <execution>
       <configuration>
         <destFile>${sonar.jacoco.reportPath}</destFile>
         <append>true</append>
     </configuration>
-    <executions>
+    </execution>
         <execution>
             <id>agent</id>
             <goals>
