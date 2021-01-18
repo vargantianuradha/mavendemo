@@ -79,6 +79,11 @@
 		                    http://10.0.3.66:9000
 		                </sonar.host.url>
 		            </properties>
+				
+				
+				<properties>
+        <sonar.coverage.jacoco.xmlReportPaths>../app-it/target/site/jacoco-aggregate/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
+    </properties>
 		        </profile>
 		       <profile>
 		            <id>coverage</id>
@@ -91,7 +96,14 @@
 		                        <groupId>org.jacoco</groupId>
 		                        <artifactId>jacoco-maven-plugin</artifactId>
 					    <version>0.7.9</version>
-<configuration>
+					    
+<configuration><execution>
+          <id>report</id>
+          <goals>
+            <goal>report-aggregate</goal>
+          </goals>
+          <phase>verify</phase>
+        </execution>
 <destFile>${basedir}/target/jacoco.exec</destFile>
 <dataFile>${basedir}/target/jacoco.exec</dataFile>
 </configuration>
@@ -113,6 +125,9 @@
 		                        </executions>
 		                    </plugin>
 		                </plugins>
+				    
+				    
+				    
 		            </build>
 		        </profile>
 		</profiles>
