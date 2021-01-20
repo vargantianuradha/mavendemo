@@ -27,7 +27,7 @@
      <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
     <sonar.jacoco.reportsPaths>${project.build.directory}/jacoco-ut.exec</sonar.jacoco.reportsPaths>
    
-    <sonar.host.url>http://10.0.3.66:9000</sonar.host.url>
+    <sonar.host.url>http://65.0.55.248:9000</sonar.host.url>
 </properties>
 	
   <dependencies>
