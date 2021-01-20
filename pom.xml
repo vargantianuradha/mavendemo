@@ -42,7 +42,7 @@
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.7.7.201606060606</version>
 	<configuration>
-                <dataFile>${basedir}/target/site/jacoco/index.html</dataFile>
+                <dataFile>${project.build.directory}/jacoco.exec</dataFile>
             </configuration> 
     <executions>
         <execution>
