@@ -42,7 +42,7 @@
     <artifactId>jacoco-maven-plugin</artifactId>
     <version>0.7.7.201606060606</version>
 	<configuration>
-                <dataFile>${basedir}/target/coverage-reports/jacoco-unit.exec</dataFile>
+                <dataFile>${basedir}/target/coverage-reports/jacoco.exec</dataFile>
             </configuration> 
     <executions>
         <execution>
