@@ -9,6 +9,6 @@ pipeline {
 
   }
   environment {
-    stage = 'build'
+    stage = 'Fluffydeploy'
   }
 }
