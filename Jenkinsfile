@@ -3,12 +3,18 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        build 'mvn clean install'
+        build ' echo "helloworld"'
+      }
+    }
+
+    stage('test') {
+      steps {
+        sh 'echo "test"'
       }
     }
 
   }
   environment {
-    stage = 'build'
+    stage = 'deploy'
   }
 }
